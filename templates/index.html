@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'contact' %}">contact</a>
+<a href="{% url 'about' %}">about</a>
+
+<h1>Welcome to Homepage</h1>
+
+<button class="btn btn-primary">Gallery</button>
+<button class="btn btn-warning">about</button>
+<button class="btn btn-danger">contact</button>
+<button class="btn btn-success">portfolio</button>
+<button class="btn btn-dark">services</button>
+<button class="btn btn-outline-danger">products</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa dicta maxime neque perferendis quo rerum sint tempore vel! Consequuntur deserunt dolor eveniet excepturi fugit itaque officiis quod veritatis.</p>
+
+</body>
+</html>

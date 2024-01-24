@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+<form method="post" action="{% url 'join' %}">
+    {% csrf_token %}
+    <h1>Join Today!</h1>
+  <label for="fname">Firstname</label>
+    <input type="text" id="fname" placeholder="firstname" name="firstname"><br><br>
+    <label for="lname">Lastname</label>
+    <input type="text" id="lname" placeholder="lastname" name="lastname"><br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="email" name="Email"><br><br>
+    <label for="pwd">Password</label>
+    <input type="password" id="pwd" placeholder="password" name="password"><br><br>
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="age" name="age"><br><br>
+ <button type="submit">save</button>
+
+</form>
+</body>
+</html>

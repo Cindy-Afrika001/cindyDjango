@@ -1,0 +1,14 @@
+img{
+    width: 430px;
+    height: 200px;
+}
+h1{
+    background-color: black;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 120px;
+}
+h1:hover{
+    background-color: lightskyblue;
+}
